@@ -13,168 +13,208 @@
 <img src="<>" width="0" height="0" style="display:none;"/>
 <body>
 <div class="swiper-container">
-<div class="swiper-wrapper">
+    <div class="swiper-wrapper">
 
-            <div class="swiper-slide head">
+        <div class="swiper-slide head">
 
             <!-- <div class="title">Slide 1</div> -->
 
-                <!-- <img src="images/head.jpg" alt=""> -->
+            <!-- <img src="images/head.jpg" alt=""> -->
 
-                <!-- <div class="headWord"></div> -->
+            <!-- <div class="headWord"></div> -->
 
-            </div>
+        </div>
 
-             <!--<div class="swiper-slide num n1">
+        <!--<div class="swiper-slide num n1">
 
-                <div class="info"></div>
+           <div class="info"></div>
 
-            </div> -->
+       </div> -->
 
-            <div class="swiper-slide num n2">
+        <div class="swiper-slide num n2">
 
-                <div class="info">
-
-                </div>
-
-            </div>
-
-            <div class="swiper-slide num n3">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n4">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n5">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n6">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n8">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n9">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n10">
-
-                <div class="info"></div>
-
-            </div>
-
-            <div class="swiper-slide num n11">
-
-                <div class="info"></div>
-
-            </div>
-
-             <div class="swiper-slide num n12">
-
-                <div class="info"></div>
+            <div class="info">
 
             </div>
 
         </div>
-        <div><img src="./images/n12.jpg" alt=""></div>
 
-        <div class="pagination"></div>
+        <div class="swiper-slide num n3">
 
-        <div class="music"></div>
+            <div class="info"></div>
 
+        </div>
+
+        <div class="swiper-slide num n4">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n5">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n6">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n8">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n9">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n10">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n11">
+
+            <div class="info"></div>
+
+        </div>
+
+        <div class="swiper-slide num n12">
+
+            <div class="info"></div>
+
+        </div>
+        <div class="swiper-slide num n12">
+
+            <div class="info"><img src="./images/n12.jpg" alt=""></div>
+
+        </div>
+
+    </div>
+
+    <div class="pagination"></div>
+
+    <div class="music"></div>
 
 
     <div class="arrow"></div>
 
-    
 
     <!--<audio src="http://f.artvoi.com/martvoi/html5/mp3/song.mp3" loop></audio>-->
 
-    </div>
+</div>
 
-    <script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery-1.10.1.min.js"></script>
 
-    <script src="js/idangerous.swiper.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
 
-    <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-    
 
-    
+<script>
 
-    <script>
+    function _WXShare(e, c, j, g, f, b, h) {
 
-function _WXShare(e,c,j,g,f,b,h){
+        //e:::icon
 
-	//e:::icon
+        c = c || 100;
 
-	c=c||100;
+        j = j || 100;
 
-	j=j||100;
+        g = g || document.title;
 
-	g=g||document.title;
+        f = f || document.title;
 
-	f=f||document.title;
+        b = b || document.location.href;
 
-	b=b||document.location.href;
+        h = h || "";
 
-	h=h||"";
+        function i() {
+            WeixinJSBridge.invoke("sendAppMessage", {
+                appid: h,
+                img_url: e,
+                img_width: c,
+                img_height: j,
+                link: b,
+                desc: f,
+                title: g
+            }, function (l) {
+                _report("send_msg", l.err_msg)
+            })
+        }
 
-	function i(){WeixinJSBridge.invoke("sendAppMessage",{appid:h,img_url:e,img_width:c,img_height:j,link:b,desc:f,title:g},function(l){_report("send_msg",l.err_msg)})}function a(){WeixinJSBridge.invoke("shareTimeline",{img_url:e,img_width:c,img_height:j,link:b,desc:f,title:g},function(l){_report("timeline",l.err_msg)})}function d(){WeixinJSBridge.invoke("shareWeibo",{content:f,url:b},function(l){_report("weibo",l.err_msg)})}document.addEventListener("WeixinJSBridgeReady",function k(){WeixinJSBridge.on("menu:share:appmessage",function(l){i()});WeixinJSBridge.on("menu:share:timeline",function(l){a()});WeixinJSBridge.on("menu:share:weibo",function(l){d()})},false)};
+        function a() {
+            WeixinJSBridge.invoke("shareTimeline", {
+                img_url: e,
+                img_width: c,
+                img_height: j,
+                link: b,
+                desc: f,
+                title: g
+            }, function (l) {
+                _report("timeline", l.err_msg)
+            })
+        }
 
-	
+        function d() {
+            WeixinJSBridge.invoke("shareWeibo", {content: f, url: b}, function (l) {
+                _report("weibo", l.err_msg)
+            })
+        }
 
-	function randomString(len){
+        document.addEventListener("WeixinJSBridgeReady", function k() {
+            WeixinJSBridge.on("menu:share:appmessage", function (l) {
+                i()
+            });
+            WeixinJSBridge.on("menu:share:timeline", function (l) {
+                a()
+            });
+            WeixinJSBridge.on("menu:share:weibo", function (l) {
+                d()
+            })
+        }, false)
+    };
 
-		len = len || 32;
 
-		var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz123456789';
+    function randomString(len) {
 
-		var maxPos = $chars.length;
+        len = len || 32;
 
-		var pwd = '';
+        var $chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz123456789';
 
-		for(var i = 0;i < len;i++){
+        var maxPos = $chars.length;
 
-			pwd+=$chars.charAt(Math.floor(Math.random() * maxPos));
+        var pwd = '';
 
-		}
+        for (var i = 0; i < len; i++) {
 
-		return pwd;
+            pwd += $chars.charAt(Math.floor(Math.random() * maxPos));
 
-	}
+        }
 
-	
+        return pwd;
 
-	var domain = randomString(6);
+    }
 
-	
 
-	var url = "http://"+domain+".m.artvoi.com/gg";
+    var domain = randomString(6);
 
-	var icon = "http://"+domain+"images/s.jpg";
 
-	_WXShare(icon,'100','100','故宫叠粹',
+    var url = "http://" + domain + ".m.artvoi.com/gg";
 
-	'artvoi特别策划\n一分钟爱上艺术\n一个甲子离合 两岸故宫叠粹\n（建议wifi下打开）',url);
+    var icon = "http://" + domain + "images/s.jpg";
+
+    _WXShare(icon, '100', '100', '故宫叠粹',
+
+        'artvoi特别策划\n一分钟爱上艺术\n一个甲子离合 两岸故宫叠粹\n（建议wifi下打开）', url);
 
 </script>
 
