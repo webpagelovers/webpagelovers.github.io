@@ -2,18 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>快有家前端框架</title>
+<title>快有家前端框架(require版本)</title>
 <link rel="stylesheet" href="css/demo/no_use.css">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-102020040-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </head>
 <body>
 <div class="container w980">
@@ -160,39 +150,6 @@
     
     <div style="margin-top:1000px;"></div>
 </div>
-<script type="text/javascript" src="js/demo/kyj.js"></script>
-<!-- <script type="text/javascript" src="js/demo/kyj.min.js"></script> -->
-<script type="text/javascript">
-	kyj.focusMap({ID:'div1',focusList:'list',iNow:0,moveTime:500,moveType:'easeIn',autoPlayTime:3000,autoPlay:'true',moveEnd:null});
-	kyj.fadeIn({ID:'div2',focusList:'list',iNow:0,moveTime:500,moveType:'easeIn',autoPlayTime:3000,autoPlay:'true',moveEnd:null});
-	kyj.tab({ID:'div12',events:'click',tabTitleList:'list',tabConList:'con',iNow:0,moveEnd:null});
-	kyj.tab({ID:'div13',events:'mouseover',tabTitleList:'list',tabConList:'con',iNow:0,moveEnd:null});
-	kyj.menu({ID:'div14',type:'default',timeSpace:'200',moveTime:500,menuTitle:'a1',menuCon:'ul1',moveEnd:null});
-	kyj.menu({ID:'div15',type:'fade',timeSpace:'200',moveTime:500,menuTitle:'a1',menuCon:'ul1',moveEnd:null});
-	kyj.selected({ID:'div16',type:'default',timeSpace:'200',selectedTitle:'a1',selectedCon:'ul1',moveEnd:null});
-	kyj.selected({ID:'div17',type:'click',timeSpace:'200',selectedTitle:'a1',selectedCon:'ul1',moveEnd:null});
-	kyj.selectAll({ID:'div18',selectAll:'a1',selectNo:'a2',selectList:'li01',moveEnd:null});
-	kyj.showBig({ID:'div19',bigList:'ccc',smallList:'bbb',view:3,spacing:20,moveTime:500,moveType:'easeIn',moveEnd:null});
-	kyj.scroDetecNav({detecNavList:'navlist',detecConList:'conlist',speed:100,moveEnd:null});
-</script>
-<!-- Google Code for aaa Conversion Page -->
-<script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 846775828;
-var google_conversion_language = "en";
-var google_conversion_format = "3";
-var google_conversion_color = "ffffff";
-var google_conversion_label = "34leCODSzXIQlIzjkwM";
-var google_remarketing_only = false;
-/* ]]> */
-</script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
-<noscript>
-<div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/846775828/?label=34leCODSzXIQlIzjkwM&amp;guid=ON&amp;script=0"/>
-</div>
-</noscript>
-	
+<script type="text/javascript" src="js/lib/require.js" data-main="js/demo/config.js"></script>
 </body>
 </html>
